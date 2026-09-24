@@ -31,15 +31,36 @@ html {
   }
 }
 
+.br-mobile {
+  display: inline;
+}
+
+@media (min-width: 850px) {
+  .br-mobile {
+    display: none;
+  }
+}
+
+.br-xs {
+  display: inline;
+}
+
+@media (min-width: 406px) {
+  .br-xs {
+    display: none;
+  }
+}
+
 body {
   margin: 0;
-  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   font-weight: 400;
   color: var(--tekkon);
   background: var(--white);
   word-break: keep-all;
   overflow-wrap: anywhere;
-  line-height: 1.9;
+  line-height: 1.95;
+  letter-spacing: 0.04em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -126,6 +147,7 @@ button {
 }
 
 .site-header__nav a {
+  font-family: "Noto Sans JP", sans-serif;
   color: var(--ink-dim-on-dark);
   text-decoration: none;
   font-size: 13px;
@@ -156,6 +178,7 @@ button {
 .section--dark {
   background: var(--tekkon);
   color: var(--white);
+  font-weight: 500;
 }
 
 .section--light {
@@ -244,6 +267,8 @@ button {
 }
 
 .hero__romaji {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
   font-size: 13px;
   letter-spacing: 0.18em;
   color: var(--ink-dim-on-dark);
@@ -264,6 +289,7 @@ button {
 }
 
 .hero__catch {
+  font-weight: 700;
   font-size: 40px;
   line-height: 1.4;
   margin: 0 0 24px;
@@ -271,7 +297,7 @@ button {
 }
 
 .hero__sub {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2;
   color: var(--ink-dim-on-dark);
   max-width: 46em;
@@ -330,7 +356,7 @@ button {
 }
 
 .about__text p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2;
   margin: 0 0 24px;
 }
@@ -413,7 +439,7 @@ button {
 }
 
 .eye-col--world .eye-col__desc {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--ink-dim-on-dark);
 }
 
@@ -467,7 +493,7 @@ button {
 
   .eye-table__head span {
     width: 50%;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.16em;
     color: var(--ink-dim-on-dark);
   }
@@ -510,11 +536,11 @@ button {
 /* ===== CAREER ===== */
 .career h2,
 .career-group h3 {
-  font-size: 13px;
-  letter-spacing: 0.2em;
+  font-size: 14px;
+  letter-spacing: 0.08em;
   color: var(--shu-on-light);
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
   margin: 0 0 24px;
 }
 
@@ -557,7 +583,7 @@ button {
 }
 
 .timeline-row__role {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--ink-dim-on-light);
 }
 
@@ -606,7 +632,7 @@ button {
 
 .card__to {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--shu-on-dark);
   font-weight: 500;
   letter-spacing: 0.06em;
@@ -620,7 +646,7 @@ button {
 }
 
 .card__body {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.9;
   color: var(--ink-dim-on-dark);
   margin: 0 0 18px;
@@ -641,8 +667,8 @@ button {
 .card__list li {
   position: relative;
   padding-left: 20px;
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.9;
   color: var(--ink-dim-on-dark);
 }
 
@@ -657,7 +683,7 @@ button {
 }
 
 .card__close {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
 }
@@ -700,7 +726,7 @@ button {
 /* ===== CONTACT ===== */
 .contact__text {
   font-size: 16px;
-  line-height: 2.1;
+  line-height: 2;
   max-width: 46em;
   margin: 0 0 48px;
 }
@@ -711,7 +737,7 @@ button {
   color: var(--white);
   text-decoration: none;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.06em;
   padding: 18px 48px;
   border: none;
@@ -722,8 +748,10 @@ button {
 }
 
 .contact__footer {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
   margin-top: 40px;
   font-size: 12px;
   color: var(--ink-dim-on-dark);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
 }
