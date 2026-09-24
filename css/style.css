@@ -31,24 +31,8 @@ html {
   }
 }
 
-.br-mobile {
-  display: inline;
-}
-
-@media (min-width: 850px) {
-  .br-mobile {
-    display: none;
-  }
-}
-
-.br-xs {
-  display: inline;
-}
-
-@media (min-width: 406px) {
-  .br-xs {
-    display: none;
-  }
+.nobr {
+  white-space: nowrap;
 }
 
 body {
